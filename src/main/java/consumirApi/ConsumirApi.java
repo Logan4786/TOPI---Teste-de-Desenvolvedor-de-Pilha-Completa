@@ -3,6 +3,7 @@ package ConsumirApi;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -31,7 +32,7 @@ public class ConsumirApi {
 
     private CloseableHttpClient clienteHTTP;
 
-    private ConsumirApi() {
+    public ConsumirApi() {
         this.clienteHTTP = HttpClients.createDefault();
 
     }
@@ -80,7 +81,8 @@ public class ConsumirApi {
     }
 
 
-}
+
+    }
 
 
 
